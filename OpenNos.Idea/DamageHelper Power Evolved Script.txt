@@ -1,0 +1,30 @@
+                          //Allgemein!
+                                Session.Character.Level = 1;
+                                Session.Character.HeroLevel = 1;
+                                Session.Character.JobLevel = 1;
+                                Logger.Log.Debug(Session.Character.Name, Session.Character.CharacterId, PrestigePacket, Session.IpAddress);
+
+                                ClassType ClassType;
+                                switch (ClassType = Session.Character.Class)
+                                {
+                                    case ClassType.Adventurer:
+                                        Session.Character.Defence += 1;
+                                        Session.Character.DefenceRate += 2;
+                                        break;
+                                    case ClassType.Swordman:
+                                        Session.Character.Defence += 1;
+                                        Session.Character.DefenceRate += 2;
+                                        break;
+                                    case ClassType.Archer:
+                                        Session.Character.Defence += 1;
+                                        Session.Character.DefenceRate += 2;
+                                        break;
+                                    case ClassType.Magician:
+                                        Session.Character.Defence += 1;
+                                        Session.Character.DefenceRate += 2;
+                                        break;
+                                    case ClassType.MartialArtist:
+                                        Session.Character.Defence += 1;
+                                        Session.Character.DefenceRate += 2;
+                                        break;
+                                }
